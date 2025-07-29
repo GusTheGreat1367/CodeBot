@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeBot</title>
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="icon" type="image/png" href="oneee.png" />
+  <style>
+    body {
+      font-family: "Victor Mono", Serif;
+      background-color: black;
+      color: limegreen;
+    }
+    h6 {
+      font-family: "Victor Mono", Serif;
+      background-color: #000000;
+      color: limegreen;
+    }
+    #chatbot {
+      width: 300px;
+      height: 200px;
+      border: 2px solid #333;
+      padding: 10px;
+      overflow-y: auto;
+      background-color: #000000;
+      font-family: "Victor Mono", Serif;;
+      color: limegreen;
+      text-align: left;
+    }
+    #userInput {
+      width: 280px;
+      padding: 8px;
+      border: 2px solid #444;
+      font-size: 16px;
+      font-family: 'Courier New', monospace;
+      color: limegreen;
+      background-color: #000000;
+      text-align: right;
+    }
+    #sendBtn {
+      padding: 5px 10px;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #sendBtn:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+<h1>CodeBot</h1>
+<h3>The AI to help with code.</h3>
+
+<script>
+  let API_Key = "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"
+  function start() {
+    document.write("AI: Hello, I am a AI chatbot meant to help you with your code, what do you want to know?");
+    let user_name = prompt("What is your name?: ");
+    user_name = document.getElementById("nameInput").value;
+    document.write("AI: Hello, " + {user_name});
+  }
+  function one(){
+    let prompt = prompt("AI: Coding help (q to quit): ");
+    document.write("" +
+    "Thinking..." +
+    "Thinking..." +
+    "Thinking..." +
+    "Thinking..." +
+    "Thinking..." +
+    "Thinking..." +
+    "Thinking..." +
+      "Doing coding stuff..." +
+      "90% COMPLETE WITH TASK" +
+    "I am not programmed for that yet.");
+    one()
+    if (prompt === "q"){
+      alert("Bye");
+    }
+  }
+
+</script>
+<div id="chatbox"></div><input type="text" id="userInput" placeholder="Ask a programming question...">
+<button id="sendBtn">Send</button>
+
+</body>
+</html>
